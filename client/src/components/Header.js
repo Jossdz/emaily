@@ -25,7 +25,7 @@ class Header extends Component {
       <nav className='indigo'>
         <div className="nav-wrapper" style={{margin: ' 0 15px'}}>
           <Link to={this.props.auth ? '/surveys':'/'} className="left brand-logo">
-            Emaily
+            Emaily d
           </Link>
           <ul className="right">
             {this.renderContent()}
