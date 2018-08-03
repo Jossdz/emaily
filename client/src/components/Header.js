@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-
+import logo from '../mail.svg'
 import Payments from './Payments';
 
 class Header extends Component {
@@ -25,7 +25,7 @@ class Header extends Component {
       <nav className='indigo'>
         <div className="nav-wrapper" style={{margin: ' 0 15px'}}>
           <Link to={this.props.auth ? '/surveys':'/'} className="left brand-logo">
-            Emaily d
+            <img src={logo} style={{width: '50px', margin: '10px 5px 5px 0px' }}/> 
           </Link>
           <ul className="right">
             {this.renderContent()}

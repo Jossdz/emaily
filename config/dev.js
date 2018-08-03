@@ -4,5 +4,6 @@ module.exports = {
   database: 'mongodb://emaily:emaily1@ds133601.mlab.com:33601/emaily-dv',
   cookieKey: 'emaily',
   stripePublishableKey: 'pk_test_iNZcU3Rj4jjDgV3hIworaTwP',
-  stipeSecretKey: 'sk_test_lvX5RAiBtYqQzkrCpfobP3MJ'
+  stipeSecretKey: 'sk_test_lvX5RAiBtYqQzkrCpfobP3MJ',
+  sendGridKey: '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'
 };
