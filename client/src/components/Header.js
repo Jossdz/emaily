@@ -22,7 +22,7 @@ class Header extends Component {
 
   render() {
     return (
-      <nav className='indigo'>
+      <nav className='blue-grey darken-4'>
         <div className="nav-wrapper" style={{margin: ' 0 15px'}}>
           <Link to={this.props.auth ? '/surveys':'/'} className="left brand-logo">
             <img src={logo} style={{width: '50px', margin: '10px 5px 5px 0px' }}/> 
