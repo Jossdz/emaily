@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import logo from '../mail.svg'
-import Payments from './Payments';
+import Payments from './Payments'
 
 class Header extends Component {
   renderContent() {
     switch (this.props.auth) {
       case null:
-        return;
+        return
       case false:
-        return <li><a href="/auth/google">Login With Google</a></li>;
+        return <li><a href="/auth/google">Login With Google</a></li>
       default:
         return [
           <li key='1' style={{margin: '0 10px'}}><Payments/></li>,
           <li key='3'> Credits: <b>{this.props.auth.credits}</b></li>,
           <li key='2'><a href='/api/logout'>Logout</a></li>
-        ];
+        ]
     }
   }
 
@@ -32,12 +32,12 @@ class Header extends Component {
           </ul>
         </div>
       </nav>
-    );
+    )
   }
 }
 
 function mapStateToProps({ auth }) {
-  return { auth };
+  return { auth }
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps)(Header)
